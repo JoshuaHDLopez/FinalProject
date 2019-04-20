@@ -104,10 +104,9 @@ Public Class frmMain
 
     Private Sub mnuCopy_Click(sender As Object, e As EventArgs) Handles mnuCopy.Click
 
-        Dim TextEditorForm As New frmTextEditor
-        TextEditorForm.MdiParent = Me
+        Dim TextEditorForm As frmTextEditor = CType(Me.ActiveMdiChild, frmTextEditor)
 
-        Clipboard.SetText(TextEditorForm.tbTextInput.SelectedText)
+        Clipboard.SetDataObject(TextEditorForm.tbTextInput.SelectedText)
 
 
 
