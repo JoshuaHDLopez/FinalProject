@@ -114,6 +114,11 @@ Public Class frmMain
 
     Private Sub mnuPaste_Click(sender As Object, e As EventArgs) Handles mnuPaste.Click
 
+        'Dim TextEditorForm As frmTextEditor = CType(Me.ActiveMdiChild, frmTextEditor)
+
+        'TextEditorForm.tbTextInput.SelectedText
+
+
     End Sub
 
     Private Sub mnuWindows_Click(sender As Object, e As EventArgs) Handles mnuWindows.Click

@@ -4,6 +4,7 @@
 'Student Number: 100503113
 'File Name:      lab3
 'Date Created:   February 25, 2019
+'Modified:       April 19, 2019
 'Description:    A Visual Basic Form Program that takes user inputs for 
 '                units shipped by each employee and calculates the average 
 '                for three employees and calculates the daily average for 
@@ -55,7 +56,8 @@ Public Class frmUnit
     ''' <param name="e"></param>
     Private Sub btnExit_Click(sender As Object, e As EventArgs) Handles btnExit.Click
 
-        Application.Exit()
+        'Application.Exit()
+        Close()
 
     End Sub
     ''' <summary>
