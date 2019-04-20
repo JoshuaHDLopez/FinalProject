@@ -114,10 +114,14 @@ Public Class frmMain
 
     Private Sub mnuPaste_Click(sender As Object, e As EventArgs) Handles mnuPaste.Click
 
-        'Dim TextEditorForm As frmTextEditor = CType(Me.ActiveMdiChild, frmTextEditor)
+        Dim TextEditorForm As frmTextEditor = CType(Me.ActiveMdiChild, frmTextEditor)
 
         'TextEditorForm.tbTextInput.SelectedText
 
+        'TextEditorForm.tbTextInput.SelectedText = Clipboard.GetDataObject()
+
+        Dim paste = Clipboard.GetDataObject()
+        TextEditorForm.tbTextInput.SelectedText = paste.GetData(DataFormats.Text).ToString()
 
     End Sub
 
