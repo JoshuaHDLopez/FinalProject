@@ -150,4 +150,38 @@ Public Class frmMain
         MessageBox.Show("NETD-2202" & vbCrLf & "Final Project" & vbCrLf & "J. Lopez", "About", MessageBoxButtons.OK)
 
     End Sub
+
+    Private Sub btnNew_Click(sender As Object, e As EventArgs) Handles btnNew.Click
+
+        Dim TextEditorForm As New frmTextEditor
+        TextEditorForm.MdiParent = Me
+        TextEditorForm.Text = System.IO.Path.GetFullPath(OpenFileDialog1.FileName)
+        TextEditorForm.Show()
+
+
+    End Sub
+
+    Private Sub btnOpen_Click(sender As Object, e As EventArgs) Handles btnOpen.Click
+
+        Dim TextEditorFrom As New frmTextEditor
+        TextEditorFrom.MdiParent = Me
+
+        Dim openDialog As New OpenFileDialog
+        Dim file As String
+        openDialog.ShowDialog()
+        file = openDialog.FileName
+
+        Dim streamRead As New System.IO.StreamReader(file)
+        'Dim tbTextInput As Object = Nothing
+        'tbTextInput.MdiParent = Me
+        TextEditorFrom.tbTextInput.Text = streamRead.ReadToEnd()
+
+        streamRead.Close()
+        TextEditorFrom.Show()
+
+    End Sub
+
+    Private Sub btnSave_Click(sender As Object, e As EventArgs) Handles btnSave.Click
+
+    End Sub
 End Class

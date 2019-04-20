@@ -140,7 +140,6 @@ Public Class frmUnit
     ''' <summary>
     ''' 
     ''' </summary>
-    ''' <param name="unitInput"></param>
     ''' <returns></returns>
     Function unitInputValidation(ByVal input As String) As Boolean
 

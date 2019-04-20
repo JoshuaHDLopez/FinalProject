@@ -128,21 +128,21 @@ Partial Class frmMain
         '
         Me.mnuCut.Name = "mnuCut"
         Me.mnuCut.ShortcutKeys = CType((System.Windows.Forms.Keys.Control Or System.Windows.Forms.Keys.X), System.Windows.Forms.Keys)
-        Me.mnuCut.Size = New System.Drawing.Size(144, 22)
+        Me.mnuCut.Size = New System.Drawing.Size(180, 22)
         Me.mnuCut.Text = "Cu&t"
         '
         'mnuCopy
         '
         Me.mnuCopy.Name = "mnuCopy"
         Me.mnuCopy.ShortcutKeys = CType((System.Windows.Forms.Keys.Control Or System.Windows.Forms.Keys.C), System.Windows.Forms.Keys)
-        Me.mnuCopy.Size = New System.Drawing.Size(144, 22)
+        Me.mnuCopy.Size = New System.Drawing.Size(180, 22)
         Me.mnuCopy.Text = "&Copy"
         '
         'mnuPaste
         '
         Me.mnuPaste.Name = "mnuPaste"
         Me.mnuPaste.ShortcutKeys = CType((System.Windows.Forms.Keys.Control Or System.Windows.Forms.Keys.P), System.Windows.Forms.Keys)
-        Me.mnuPaste.Size = New System.Drawing.Size(144, 22)
+        Me.mnuPaste.Size = New System.Drawing.Size(180, 22)
         Me.mnuPaste.Text = "&Paste"
         '
         'mnuWindows
@@ -156,25 +156,25 @@ Partial Class frmMain
         'mnuCascade
         '
         Me.mnuCascade.Name = "mnuCascade"
-        Me.mnuCascade.Size = New System.Drawing.Size(151, 22)
+        Me.mnuCascade.Size = New System.Drawing.Size(180, 22)
         Me.mnuCascade.Text = "Casca&de"
         '
         'mnuTileVertical
         '
         Me.mnuTileVertical.Name = "mnuTileVertical"
-        Me.mnuTileVertical.Size = New System.Drawing.Size(151, 22)
+        Me.mnuTileVertical.Size = New System.Drawing.Size(180, 22)
         Me.mnuTileVertical.Text = "Tile &Vertical"
         '
         'mnuTileHorizontal
         '
         Me.mnuTileHorizontal.Name = "mnuTileHorizontal"
-        Me.mnuTileHorizontal.Size = New System.Drawing.Size(151, 22)
+        Me.mnuTileHorizontal.Size = New System.Drawing.Size(180, 22)
         Me.mnuTileHorizontal.Text = "Tile Hori&zontal"
         '
         'mnuAverageUnits
         '
         Me.mnuAverageUnits.Name = "mnuAverageUnits"
-        Me.mnuAverageUnits.Size = New System.Drawing.Size(151, 22)
+        Me.mnuAverageUnits.Size = New System.Drawing.Size(180, 22)
         Me.mnuAverageUnits.Text = "Average &Units"
         '
         'mnuHelp
@@ -187,7 +187,7 @@ Partial Class frmMain
         'mnuAbout
         '
         Me.mnuAbout.Name = "mnuAbout"
-        Me.mnuAbout.Size = New System.Drawing.Size(107, 22)
+        Me.mnuAbout.Size = New System.Drawing.Size(180, 22)
         Me.mnuAbout.Text = "A&bout"
         '
         'ToolStrip1
