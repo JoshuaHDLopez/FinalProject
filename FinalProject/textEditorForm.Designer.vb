@@ -1,5 +1,5 @@
 ﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
-Partial Class childForm
+Partial Class frmTextEditor
     Inherits System.Windows.Forms.Form
 
     'Form overrides dispose to clean up the component list.
@@ -38,13 +38,13 @@ Partial Class childForm
         Me.tbTextInput.TabIndex = 0
         Me.ToolTip1.SetToolTip(Me.tbTextInput, "Text Box for input")
         '
-        'childForm
+        'frmTextEditor
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(800, 450)
         Me.Controls.Add(Me.tbTextInput)
-        Me.Name = "childForm"
+        Me.Name = "frmTextEditor"
         Me.ResumeLayout(False)
         Me.PerformLayout()
 

@@ -1,9 +1,9 @@
-﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
-Partial Class MainForm
+﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()>
+Partial Class frmMain
     Inherits System.Windows.Forms.Form
 
     'Form overrides dispose to clean up the component list.
-    <System.Diagnostics.DebuggerNonUserCode()> _
+    <System.Diagnostics.DebuggerNonUserCode()>
     Protected Overrides Sub Dispose(ByVal disposing As Boolean)
         Try
             If disposing AndAlso components IsNot Nothing Then
@@ -20,10 +20,10 @@ Partial Class MainForm
     'NOTE: The following procedure is required by the Windows Form Designer
     'It can be modified using the Windows Form Designer.  
     'Do not modify it using the code editor.
-    <System.Diagnostics.DebuggerStepThrough()> _
+    <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
-        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(MainForm))
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(frmMain))
         Me.MenuStrip1 = New System.Windows.Forms.MenuStrip()
         Me.mnuFile = New System.Windows.Forms.ToolStripMenuItem()
         Me.mnuNew = New System.Windows.Forms.ToolStripMenuItem()
@@ -49,6 +49,8 @@ Partial Class MainForm
         Me.btnOpen = New System.Windows.Forms.ToolStripButton()
         Me.btnSave = New System.Windows.Forms.ToolStripButton()
         Me.stsStatus = New System.Windows.Forms.StatusBar()
+        Me.OpenFileDialog1 = New System.Windows.Forms.OpenFileDialog()
+        Me.SaveFileDialog1 = New System.Windows.Forms.SaveFileDialog()
         Me.MenuStrip1.SuspendLayout()
         Me.ToolStrip1.SuspendLayout()
         Me.SuspendLayout()
@@ -126,21 +128,21 @@ Partial Class MainForm
         '
         Me.mnuCut.Name = "mnuCut"
         Me.mnuCut.ShortcutKeys = CType((System.Windows.Forms.Keys.Control Or System.Windows.Forms.Keys.X), System.Windows.Forms.Keys)
-        Me.mnuCut.Size = New System.Drawing.Size(180, 22)
+        Me.mnuCut.Size = New System.Drawing.Size(144, 22)
         Me.mnuCut.Text = "Cu&t"
         '
         'mnuCopy
         '
         Me.mnuCopy.Name = "mnuCopy"
         Me.mnuCopy.ShortcutKeys = CType((System.Windows.Forms.Keys.Control Or System.Windows.Forms.Keys.C), System.Windows.Forms.Keys)
-        Me.mnuCopy.Size = New System.Drawing.Size(180, 22)
+        Me.mnuCopy.Size = New System.Drawing.Size(144, 22)
         Me.mnuCopy.Text = "&Copy"
         '
         'mnuPaste
         '
         Me.mnuPaste.Name = "mnuPaste"
         Me.mnuPaste.ShortcutKeys = CType((System.Windows.Forms.Keys.Control Or System.Windows.Forms.Keys.P), System.Windows.Forms.Keys)
-        Me.mnuPaste.Size = New System.Drawing.Size(180, 22)
+        Me.mnuPaste.Size = New System.Drawing.Size(144, 22)
         Me.mnuPaste.Text = "&Paste"
         '
         'mnuWindows
@@ -154,25 +156,25 @@ Partial Class MainForm
         'mnuCascade
         '
         Me.mnuCascade.Name = "mnuCascade"
-        Me.mnuCascade.Size = New System.Drawing.Size(180, 22)
+        Me.mnuCascade.Size = New System.Drawing.Size(151, 22)
         Me.mnuCascade.Text = "Casca&de"
         '
         'mnuTileVertical
         '
         Me.mnuTileVertical.Name = "mnuTileVertical"
-        Me.mnuTileVertical.Size = New System.Drawing.Size(180, 22)
+        Me.mnuTileVertical.Size = New System.Drawing.Size(151, 22)
         Me.mnuTileVertical.Text = "Tile &Vertical"
         '
         'mnuTileHorizontal
         '
         Me.mnuTileHorizontal.Name = "mnuTileHorizontal"
-        Me.mnuTileHorizontal.Size = New System.Drawing.Size(180, 22)
+        Me.mnuTileHorizontal.Size = New System.Drawing.Size(151, 22)
         Me.mnuTileHorizontal.Text = "Tile Hori&zontal"
         '
         'mnuAverageUnits
         '
         Me.mnuAverageUnits.Name = "mnuAverageUnits"
-        Me.mnuAverageUnits.Size = New System.Drawing.Size(180, 22)
+        Me.mnuAverageUnits.Size = New System.Drawing.Size(151, 22)
         Me.mnuAverageUnits.Text = "Average &Units"
         '
         'mnuHelp
@@ -185,7 +187,7 @@ Partial Class MainForm
         'mnuAbout
         '
         Me.mnuAbout.Name = "mnuAbout"
-        Me.mnuAbout.Size = New System.Drawing.Size(180, 22)
+        Me.mnuAbout.Size = New System.Drawing.Size(107, 22)
         Me.mnuAbout.Text = "A&bout"
         '
         'ToolStrip1
@@ -232,7 +234,11 @@ Partial Class MainForm
         Me.stsStatus.TabIndex = 3
         Me.stsStatus.Text = "Status"
         '
-        'MainForm
+        'OpenFileDialog1
+        '
+        Me.OpenFileDialog1.FileName = "OpenFileDialog1"
+        '
+        'frmMain
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
@@ -242,7 +248,7 @@ Partial Class MainForm
         Me.Controls.Add(Me.MenuStrip1)
         Me.IsMdiContainer = True
         Me.MainMenuStrip = Me.MenuStrip1
-        Me.Name = "MainForm"
+        Me.Name = "frmMain"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Main"
         Me.MenuStrip1.ResumeLayout(False)
@@ -279,5 +285,6 @@ Partial Class MainForm
     Friend WithEvents btnOpen As ToolStripButton
     Friend WithEvents btnSave As ToolStripButton
     Friend WithEvents stsStatus As StatusBar
-
+    Friend WithEvents OpenFileDialog1 As OpenFileDialog
+    Friend WithEvents SaveFileDialog1 As SaveFileDialog
 End Class
