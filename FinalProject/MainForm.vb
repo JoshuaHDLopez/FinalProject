@@ -23,8 +23,8 @@ Public Class frmMain
     Private Sub mnuOpen_Click(sender As Object, e As EventArgs) Handles mnuOpen.Click
 
 
-        Dim TextEditorFrom As New frmTextEditor
-        TextEditorFrom.MdiParent = Me
+        Dim TextEditorForm As New frmTextEditor
+        TextEditorForm.MdiParent = Me
 
         Dim openDialog As New OpenFileDialog
         Dim file As String
@@ -34,10 +34,10 @@ Public Class frmMain
         Dim streamRead As New System.IO.StreamReader(file)
         'Dim tbTextInput As Object = Nothing
         'tbTextInput.MdiParent = Me
-        TextEditorFrom.tbTextInput.Text = streamRead.ReadToEnd()
+        TextEditorForm.tbTextInput.Text = streamRead.ReadToEnd()
 
         streamRead.Close()
-        TextEditorFrom.Show()
+        TextEditorForm.Show()
 
     End Sub
 
@@ -84,16 +84,21 @@ Public Class frmMain
 
     Private Sub mnuCut_Click(sender As Object, e As EventArgs) Handles mnuCut.Click
 
-        Dim TextEditorForm As New frmTextEditor
-        TextEditorForm.MdiParent = Me
+        'Dim TextEditorForm As New frmTextEditor
+        'TextEditorForm.MdiParent = Me
 
-        My.Computer.Clipboard.SetText(TextEditorForm.tbTextInput.SelectedText)
-        TextEditorForm.tbTextInput.SelectedText = ""
+        'My.Computer.Clipboard.SetText(TextEditorForm.tbTextInput.SelectedText)
+        'TextEditorForm.tbTextInput.SelectedText = ""
 
         'My.Computer.Clipboard.SetDataObject(CType(tbTextInput, SelectedText))
-        'TextEditorFrom.tbTextInput.SelectedText = ""
+        'TextEditorForm.tbTextInput.SelectedText = ""
 
-        'Clipboard.SetDataObject(TextEditorForm.activeControl.Text)
+        'Clipboard.SetDataObject(tbTextInput.SelectedText)
+
+        Dim TextEditorForm As frmTextEditor = CType(Me.ActiveMdiChild, frmTextEditor)
+
+        Clipboard.SetDataObject(TextEditorForm.tbTextInput.SelectedText)
+        TextEditorForm.tbTextInput.SelectedText = ""
 
     End Sub
 
@@ -102,7 +107,9 @@ Public Class frmMain
         Dim TextEditorForm As New frmTextEditor
         TextEditorForm.MdiParent = Me
 
-        Clipboard.SetDataObject(TextEditorForm.tbTextInput.SelectedText)
+        Clipboard.SetText(TextEditorForm.tbTextInput.SelectedText)
+
+
 
     End Sub
 
