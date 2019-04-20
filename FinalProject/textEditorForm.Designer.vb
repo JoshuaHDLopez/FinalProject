@@ -34,7 +34,7 @@ Partial Class frmTextEditor
         Me.tbTextInput.Multiline = True
         Me.tbTextInput.Name = "tbTextInput"
         Me.tbTextInput.ScrollBars = System.Windows.Forms.ScrollBars.Both
-        Me.tbTextInput.Size = New System.Drawing.Size(800, 450)
+        Me.tbTextInput.Size = New System.Drawing.Size(458, 325)
         Me.tbTextInput.TabIndex = 0
         Me.ToolTip1.SetToolTip(Me.tbTextInput, "Text Box for input")
         '
@@ -42,7 +42,7 @@ Partial Class frmTextEditor
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(800, 450)
+        Me.ClientSize = New System.Drawing.Size(458, 325)
         Me.Controls.Add(Me.tbTextInput)
         Me.Name = "frmTextEditor"
         Me.ResumeLayout(False)

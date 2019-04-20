@@ -9,7 +9,7 @@
 '                for three employees and calculates the daily average for 
 '                the company.
 
-Public Class frmUnitsShippedEmployee
+Public Class frmUnit
 
     'constants
     Const MIN_INPUT = 0
@@ -41,8 +41,8 @@ Public Class frmUnitsShippedEmployee
     Private Sub Array_Load(sender As Object, e As EventArgs)
 
         arrayEmployeeUnits(indexEmployeeOne) = employeeOne
-        arrayEmployeeUnits(indexEmployeeTwo) = employeetwo
-        arrayEmployeeUnits(indexEmployeeThree) = employeethree
+        arrayEmployeeUnits(indexEmployeeTwo) = employeeTwo
+        arrayEmployeeUnits(indexEmployeeThree) = employeeThree
 
 
 

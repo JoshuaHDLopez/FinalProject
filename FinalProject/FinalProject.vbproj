@@ -73,10 +73,10 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="UnitForms.designer.vb">
-      <DependentUpon>UnitForms.vb</DependentUpon>
+    <Compile Include="UnitForm.designer.vb">
+      <DependentUpon>UnitForm.vb</DependentUpon>
     </Compile>
-    <Compile Include="UnitForms.vb">
+    <Compile Include="UnitForm.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="TextEditorForm.Designer.vb">
@@ -109,8 +109,8 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="UnitForms.resx">
-      <DependentUpon>UnitForms.vb</DependentUpon>
+    <EmbeddedResource Include="UnitForm.resx">
+      <DependentUpon>UnitForm.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="TextEditorForm.resx">
       <DependentUpon>TextEditorForm.vb</DependentUpon>

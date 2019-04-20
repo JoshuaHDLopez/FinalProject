@@ -134,7 +134,7 @@ Public Class frmMain
 
     Private Sub mnuAverageUnits_Click(sender As Object, e As EventArgs) Handles mnuAverageUnits.Click
 
-        Dim UnitForm As New frmTextEditor
+        Dim UnitForm As New frmUnit
         UnitForm.MdiParent = Me
 
         UnitForm.Show()
